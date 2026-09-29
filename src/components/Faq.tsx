@@ -17,7 +17,7 @@ export function Faq({ items }: { items: Item[] }) {
               type="button"
               onClick={() => setOpen(isOpen ? null : index)}
               aria-expanded={isOpen}
-              className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-medium"
+              className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-medium transition-colors hover:text-primary"
             >
               {item.question}
               <span className={`text-accent transition-transform ${isOpen ? "rotate-45" : ""}`}>+</span>
